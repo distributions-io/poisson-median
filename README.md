@@ -6,8 +6,8 @@ Median
 
 The [median](https://en.wikipedia.org/wiki/median) for a [Poisson](https://en.wikipedia.org/wiki/Poisson_distribution) random variable is
 
-<div class="equation" align="center" data-raw-text="\operatorname{}\left[ X \right] = " data-equation="eq:median">
-	<img src="" alt="median for a Poisson distribution.">
+<div class="equation" align="center" data-raw-text="\operatorname{median}\left( X \right) \approx\lfloor\lambda+1/3-0.02/\lambda\rfloor" data-equation="eq:median">
+	<img src="https://cdn.rawgit.com/distributions-io/poisson-median/ba4328e60396628c602e65d13a5b0343aa7dea6b/docs/img/eqn.svg" alt="Median for a Poisson distribution.">
 	<br>
 </div>
 
@@ -252,7 +252,7 @@ var lambda,
 // Plain arrays...
 lambda = new Array( 10 );
 for ( i = 0; i < lambda.length; i++ ) {
-	lambda[ i ] = i;
+	lambda[ i ] = i + 1;
 }
 out = median( lambda );
 
@@ -283,7 +283,7 @@ out = median( lambda, {
 // Typed arrays...
 lambda = new Float64Array( 10 );
 for ( i = 0; i < lambda.length; i++ ) {
-	lambda[ i ] = i;
+	lambda[ i ] = i + 1;
 }
 out = median( lambda );
 
