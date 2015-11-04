@@ -103,7 +103,10 @@ var lambda = [
 	{'x':[9,4]}
 ];
 
-var out = median( lambda, 'x|1', '|' );
+var out = median( lambda, {
+	'path': 'x|1',
+	'sep': '|'
+});
 /*
 	[
 		{'x':[9,~0.000]},

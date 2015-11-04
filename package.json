@@ -1,7 +1,7 @@
 {
   "name": "distributions-poisson-median",
   "version": "0.0.0",
-  "description": "Poisson distribution mean.",
+  "description": "Poisson distribution median.",
   "author": {
     "name": "Philipp Burckhardt",
     "email": "pburckhardt@outlook.com"
@@ -20,11 +20,13 @@
   "main": "./lib",
   "repository": {
     "type": "git",
-    "url": "git://github.com/compute-io/poisson-median.git"
+    "url": "git://github.com/distributions-io/poisson-median.git"
   },
   "keywords": [
     "distributions.io",
     "distributions",
+    "discrete",
+    "counts",
     "probability",
     "statistics",
     "stats",
@@ -34,7 +36,7 @@
     "quantiles"
   ],
   "bugs": {
-    "url": "https://github.com/compute-io/poisson-median/issues"
+    "url": "https://github.com/distributions-io/poisson-median/issues"
   },
   "dependencies": {
     "compute-array-constructors": "^1.0.0",
